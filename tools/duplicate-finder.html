@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duplicate Finder | Datacorex Tools Suite</title>
+  <meta name="description" content="Detect and eliminate duplicate rows from any Excel dataset — by any column combination — so your data stays clean and accurate.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../tool-styles.css">
+</head>
+<body>
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="wrapper">
+
+  <nav>
+    <div class="nav-logo-col">
+      <a href="../index.html" class="logo" aria-label="Datacorex">
+        <div class="logo-mark" aria-hidden="true">⚡</div>
+        Data<span>corex</span>
+      </a>
+    </div>
+    <div class="nav-links-col">
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#tools">Tools</a></li>
+      </ul>
+    </div>
+    <div class="nav-cta-col">
+      <div class="lang-toggle">
+        <a href="../ar/duplicate-finder.html" class="lang-btn">عربي</a>
+      </div>
+      <a href="../index.html#tools" class="nav-cta">All Tools</a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile-menu" id="navMobileMenu">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#tools">Tools</a></li>
+        <li><a href="../ar/duplicate-finder.html">العربية</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="tool-hero">
+    <div class="hero-glows" aria-hidden="true"></div>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="../index.html#tools">Tools</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Duplicate Finder</span>
+      </div>
+      <div class="tool-badge">Data Cleaning Tool</div>
+      <h1>Find & Remove Duplicate<br><span class="accent">Records in Your Excel Files</span></h1>
+      <p class="tool-hero-sub">Detect and eliminate duplicate rows from any Excel dataset — by any column combination — so your data stays clean and accurate.</p>
+      <div class="hero-actions">
+        <a href="../index.html#tools" class="btn-hero primary">🚀 Try This Tool</a>
+        <a href="../index.html#tools" class="btn-hero secondary">All Tools</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="tool-image-section">
+    <div class="container">
+      <div class="tool-image-wrap">
+        <img src="../images/tools/duplicate-finder.png" alt="Duplicate Finder Tool Interface" loading="lazy" width="900">
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">THE TOOL</div>
+      <h2 class="section-title reveal">What This Tool Does</h2>
+      <p class="section-body reveal" style="transition-delay:.1s">The Duplicate Finder tool scans your Excel or CSV dataset for duplicate rows based on any column or combination of columns you choose. It identifies exact duplicates and near-duplicates, shows you what was found, and lets you remove them with a single click — keeping either the first or last occurrence of each record. The output is a clean, deduplicated Excel file with a summary of what was removed.</p>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">BENEFITS</div>
+      <h2 class="section-title reveal">Key Benefits</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">🔍</div>
+          <div class="benefit-title">Detect Any Duplicate Type</div>
+          <div class="benefit-desc">Find exact duplicates, partial matches, or duplicates based on a specific column combination.</div>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">🧹</div>
+          <div class="benefit-title">Clean Data Automatically</div>
+          <div class="benefit-desc">Remove all duplicates and download a clean dataset — keeping the first or last occurrence.</div>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">📋</div>
+          <div class="benefit-title">Full Duplicate Report</div>
+          <div class="benefit-desc">Get a detailed report showing every duplicate group found — before you decide to remove them.</div>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">🛡️</div>
+          <div class="benefit-title">Non-Destructive Process</div>
+          <div class="benefit-desc">Your original file is never modified. The output is always a new, separate clean file.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">WHEN TO USE</div>
+      <h2 class="section-title reveal">When to Use</h2>
+      <div class="use-cases-list">
+        <div class="use-case-item reveal">
+          <div class="uc-bullet"></div>
+          <div class="uc-text">Cleaning a customer database before a CRM import to prevent duplicate profiles</div>
+        </div>
+        <div class="use-case-item reveal">
+          <div class="uc-bullet"></div>
+          <div class="uc-text">Removing duplicate transactions from a financial ledger before reporting</div>
+        </div>
+        <div class="use-case-item reveal">
+          <div class="uc-bullet"></div>
+          <div class="uc-text">Deduplicating an email marketing list before a campaign send</div>
+        </div>
+        <div class="use-case-item reveal">
+          <div class="uc-bullet"></div>
+          <div class="uc-text">Cleaning an HR roster after merging data from multiple systems</div>
+        </div>
+        <div class="use-case-item reveal">
+          <div class="uc-bullet"></div>
+          <div class="uc-text">Removing repeated entries from survey response exports</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">WORKFLOW</div>
+      <h2 class="section-title reveal">Input → Process → Output</h2>
+      <div class="flow-grid reveal">
+        <div class="flow-card">
+          <div class="flow-label">INPUT</div>
+          <div class="flow-title">Excel / CSV Dataset</div>
+          <div class="flow-body">Upload your dataset. It can contain any number of rows and columns.</div>
+        </div>
+        <div class="flow-arrow"><div class="arrow-line"></div></div>
+        <div class="flow-card">
+          <div class="flow-label">PROCESS</div>
+          <div class="flow-title">Column-Based Duplicate Detection</div>
+          <div class="flow-body">Datacorex scans all rows and groups duplicates based on your chosen columns. Each group is flagged for review.</div>
+        </div>
+        <div class="flow-arrow"><div class="arrow-line"></div></div>
+        <div class="flow-card">
+          <div class="flow-label">OUTPUT</div>
+          <div class="flow-title">Clean Deduplicated File</div>
+          <div class="flow-body">Download a clean Excel file with duplicates removed, plus a separate report of all duplicates that were found.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">HOW TO USE</div>
+      <h2 class="section-title reveal">How to Use</h2>
+      <div class="steps-list">
+        <div class="step-item reveal">
+          <div class="step-num-circle">1</div>
+          <div>
+            <div class="step-content-title">Upload Your Dataset</div>
+            <div class="step-content-desc">Upload the Excel or CSV file you want to check for duplicates.</div>
+          </div>
+        </div>
+        <div class="step-item reveal">
+          <div class="step-num-circle">2</div>
+          <div>
+            <div class="step-content-title">Select Duplicate Key Columns</div>
+            <div class="step-content-desc">Choose which columns define a duplicate (e.g., Email only, or First Name + Last Name + Email together).</div>
+          </div>
+        </div>
+        <div class="step-item reveal">
+          <div class="step-num-circle">3</div>
+          <div>
+            <div class="step-content-title">Review Duplicate Report</div>
+            <div class="step-content-desc">Datacorex shows you all duplicate groups before removal so you can review what will be affected.</div>
+          </div>
+        </div>
+        <div class="step-item reveal">
+          <div class="step-num-circle">4</div>
+          <div>
+            <div class="step-content-title">Configure Keep Rule</div>
+            <div class="step-content-desc">Choose whether to keep the first occurrence, the last occurrence, or manually select which rows to keep.</div>
+          </div>
+        </div>
+        <div class="step-item reveal">
+          <div class="step-num-circle">5</div>
+          <div>
+            <div class="step-content-title">Remove & Download</div>
+            <div class="step-content-desc">Click Remove Duplicates. Download your clean deduplicated Excel file.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">EXAMPLES</div>
+      <h2 class="section-title reveal">Real Examples</h2>
+      <div class="examples-grid">
+        <div class="example-card reveal">
+          <div class="example-tag">Marketing</div>
+          <div class="example-title">Email List Deduplication</div>
+          <div class="example-body">Before launching a major email campaign, a marketing team uses Duplicate Finder on their 45,000-contact list. The tool identifies 3,200 duplicate email addresses and removes them — preventing embarrassing duplicate sends and protecting sender reputation.</div>
+        </div>
+        <div class="example-card reveal">
+          <div class="example-tag">Finance</div>
+          <div class="example-title">Duplicate Transaction Cleanup</div>
+          <div class="example-body">An accounts team discovers their ERP export contains duplicate transaction entries after a system migration. Duplicate Finder scans 80,000 rows, identifies 412 duplicate transactions by Transaction ID, and produces a clean file ready for reconciliation.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">SUPPORTED FORMATS</div>
+      <h2 class="section-title reveal">Supported Formats</h2>
+      <div class="formats-row reveal" style="transition-delay:.1s">
+        <div class="format-badge">
+          <div class="format-icon">📗</div>
+          <div>
+            <div class="format-text">XLSX</div>
+            <div class="format-desc">Excel 2007+</div>
+          </div>
+        </div>
+        <div class="format-badge">
+          <div class="format-icon">📘</div>
+          <div>
+            <div class="format-text">XLS</div>
+            <div class="format-desc">Excel 97-2003</div>
+          </div>
+        </div>
+        <div class="format-badge">
+          <div class="format-icon">📄</div>
+          <div>
+            <div class="format-text">CSV</div>
+            <div class="format-desc">Comma Separated</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">FAQ</div>
+      <h2 class="section-title reveal">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">Can I define what counts as a duplicate?</div>
+          <div class="faq-a">Yes. You choose which columns to use as the duplicate key. A duplicate is any row where all selected columns match another row.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What if I want to keep the most recent duplicate instead of the first?</div>
+          <div class="faq-a">You can choose to keep the first or last occurrence of each duplicate group before removing them.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Will I see the duplicates before they're removed?</div>
+          <div class="faq-a">Yes. Datacorex shows you a full duplicate report first, so you can review everything before deciding to remove them.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Can I remove duplicates based on just one column like Email?</div>
+          <div class="faq-a">Yes. Select only the Email column as your key, and any rows sharing the same email will be treated as duplicates.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tool-cta">
+    <div class="container">
+      <div class="cta-card reveal">
+        <h2>Clean Your Data.<br><span class="accent">Remove Every Duplicate.</span></h2>
+        <p>Find and remove duplicate records from any Excel dataset — accurate, instant, and non-destructive.</p>
+        <div class="cta-buttons">
+          <a href="../index.html#tools" class="btn-hero primary" style="font-size:15px;padding:16px 40px;">🚀 Try This Tool</a>
+          <a href="../index.html#tools" class="btn-hero secondary">All Tools</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <a href="../index.html" class="logo" style="margin-bottom:8px;">
+            <div class="logo-mark" aria-hidden="true">⚡</div>
+            Data<span>corex</span>
+          </a>
+          <p class="footer-copy">Datacorex Tools Suite v5.0.0 — Free Excel automation tools.</p>
+        </div>
+        <nav class="footer-links">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#tools">Tools</a>
+          <a href="../ar/duplicate-finder.html">العربية</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  const hamburger = document.getElementById('navHamburger');
+  const mobileMenu = document.getElementById('navMobileMenu');
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => {
+      const isOpen = hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+  }
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(el => io.observe(el));
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    if (navEl) navEl.style.background = window.scrollY > 60 ? 'rgba(10,14,26,.97)' : 'rgba(10,14,26,.75)';
+  });
+</script>
+
+</body>
+</html>

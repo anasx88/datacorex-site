@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Summary | Datacorex Tools Suite</title>
+  <meta name="description" content="Create grouped aggregations — sums, counts, averages, min, max — from any Excel dataset instantly. No pivot table setup required.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../tool-styles.css">
+</head>
+<body>
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="wrapper">
+
+  <nav>
+    <div class="nav-logo-col">
+      <a href="../index.html" class="logo" aria-label="Datacorex">
+        <div class="logo-mark" aria-hidden="true">⚡</div>
+        Data<span>corex</span>
+      </a>
+    </div>
+    <div class="nav-links-col">
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#tools">Tools</a></li>
+      </ul>
+    </div>
+    <div class="nav-cta-col">
+      <div class="lang-toggle">
+        <a href="../ar/smart-summary.html" class="lang-btn">عربي</a>
+      </div>
+      <a href="../index.html#tools" class="nav-cta">All Tools</a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile-menu" id="navMobileMenu">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#tools">Tools</a></li>
+        <li><a href="../ar/smart-summary.html">العربية</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="tool-hero">
+    <div class="hero-glows" aria-hidden="true"></div>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="../index.html#tools">Tools</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Smart Summary</span>
+      </div>
+      <div class="tool-badge">Data Aggregation Tool</div>
+      <h1>Build Smart Summary Tables<br><span class="accent">Without Pivot Tables</span></h1>
+      <p class="tool-hero-sub">Create grouped aggregations — sums, counts, averages, min, max — from any Excel dataset instantly. No pivot table setup required.</p>
+      <div class="hero-actions">
+        <a href="../index.html#tools" class="btn-hero primary">🚀 Try This Tool</a>
+        <a href="../index.html#tools" class="btn-hero secondary">All Tools</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="tool-image-section">
+    <div class="container">
+      <div class="tool-image-wrap">
+        <img src="../images/tools/smart-summary.png" alt="Smart Summary Tool Interface" loading="lazy" width="900">
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">THE TOOL</div>
+      <h2 class="section-title reveal">What This Tool Does</h2>
+      <p class="section-body reveal" style="transition-delay:.1s">The Smart Summary Builder lets you create aggregated summary tables from any Excel or CSV dataset — without building a pivot table. Choose your grouping columns, select your aggregation methods (Sum, Count, Average, Min, Max), and instantly generate a clean summary Excel file. Perfect for building sales reports, headcount summaries, financial rollups, and any grouped analysis — in seconds.</p>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">BENEFITS</div>
+      <h2 class="section-title reveal">Key Benefits</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">📊</div>
+          <div class="benefit-title">No Pivot Table Needed</div>
+          <div class="benefit-desc">Get grouped summaries without the complexity of pivot table setup, formatting, and refresh cycles.</div>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">🔢</div>
+          <div class="benefit-title">Multiple Aggregation Types</div>
+          <div class="benefit-desc">Combine Sum, Count, Average, Min, and Max in a single summary output.</div>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">🗂️</div>
+          <div class="benefit-title">Multi-Level Grouping</div>
+          <div class="benefit-desc">Group by one column or combine multiple columns for deeper breakdowns (e.g., Region + Product).</div>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">📁</div>
+          <div class="benefit-title">Static, Shareable Output</div>
+          <div class="benefit-desc">The output is a clean, formula-free Excel file that works without the source data attached.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">WHEN TO USE</div>
+      <h2 class="section-title reveal">When to Use</h2>
+      <div class="use-cases-list">
+        <div class="use-case-item reveal">
+          <div class="uc-bullet"></div>
+          <div class="uc-text">Building a department-level headcount and average salary summary from HR data</div>
+        </div>
+        <div class="use-case-item reveal">
+          <div class="uc-bullet"></div>
+          <div class="uc-text">Creating a regional sales summary from a detailed transaction file</div>
+        </div>
+        <div class="use-case-item reveal">
+          <div class="uc-bullet"></div>
+          <div class="uc-text">Summarizing support ticket counts and resolution times by category</div>
+        </div>
+        <div class="use-case-item reveal">
+          <div class="uc-bullet"></div>
+          <div class="uc-text">Generating a product performance summary (total sales, avg price) from order data</div>
+        </div>
+        <div class="use-case-item reveal">
+          <div class="uc-bullet"></div>
+          <div class="uc-text">Building a monthly expense summary from a detailed expense transaction log</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">WORKFLOW</div>
+      <h2 class="section-title reveal">Input → Process → Output</h2>
+      <div class="flow-grid reveal">
+        <div class="flow-card">
+          <div class="flow-label">INPUT</div>
+          <div class="flow-title">Detailed Excel / CSV Dataset</div>
+          <div class="flow-body">Upload any Excel or CSV file with row-level data you want to summarize.</div>
+        </div>
+        <div class="flow-arrow"><div class="arrow-line"></div></div>
+        <div class="flow-card">
+          <div class="flow-label">PROCESS</div>
+          <div class="flow-title">Group, Aggregate & Build</div>
+          <div class="flow-body">Choose grouping columns and aggregation types. Datacorex processes every row and builds the summary table.</div>
+        </div>
+        <div class="flow-arrow"><div class="arrow-line"></div></div>
+        <div class="flow-card">
+          <div class="flow-label">OUTPUT</div>
+          <div class="flow-title">Summary Excel File</div>
+          <div class="flow-body">A clean, formula-free Excel summary table — ready to share, present, or import into reports.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">HOW TO USE</div>
+      <h2 class="section-title reveal">How to Use</h2>
+      <div class="steps-list">
+        <div class="step-item reveal">
+          <div class="step-num-circle">1</div>
+          <div>
+            <div class="step-content-title">Upload Your Dataset</div>
+            <div class="step-content-desc">Upload the detailed Excel or CSV file you want to summarize.</div>
+          </div>
+        </div>
+        <div class="step-item reveal">
+          <div class="step-num-circle">2</div>
+          <div>
+            <div class="step-content-title">Select Group By Columns</div>
+            <div class="step-content-desc">Choose the columns to group your data by (e.g., Region, Department, Product Category).</div>
+          </div>
+        </div>
+        <div class="step-item reveal">
+          <div class="step-num-circle">3</div>
+          <div>
+            <div class="step-content-title">Choose Aggregations</div>
+            <div class="step-content-desc">Select which numeric columns to aggregate and which operations to apply: Sum, Count, Average, Min, Max.</div>
+          </div>
+        </div>
+        <div class="step-item reveal">
+          <div class="step-num-circle">4</div>
+          <div>
+            <div class="step-content-title">Build Summary</div>
+            <div class="step-content-desc">Click Build Summary. Datacorex processes the entire dataset and generates the summary table.</div>
+          </div>
+        </div>
+        <div class="step-item reveal">
+          <div class="step-num-circle">5</div>
+          <div>
+            <div class="step-content-title">Download Output</div>
+            <div class="step-content-desc">Download the clean summary Excel file — formatted and ready to use.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">EXAMPLES</div>
+      <h2 class="section-title reveal">Real Examples</h2>
+      <div class="examples-grid">
+        <div class="example-card reveal">
+          <div class="example-tag">Sales</div>
+          <div class="example-title">Regional Sales Performance Summary</div>
+          <div class="example-body">A sales analyst has a 60,000-row transaction file. Using Smart Summary Builder with grouping by Region and Product, they generate a clean summary showing total revenue, average order value, and transaction count per region-product combination — in seconds, no pivot required.</div>
+        </div>
+        <div class="example-card reveal">
+          <div class="example-tag">HR</div>
+          <div class="example-title">Department Headcount & Salary Rollup</div>
+          <div class="example-body">HR needs a department-level summary showing headcount, average salary, and total payroll cost. Smart Summary Builder processes the 4,000-row employee file grouped by Department, producing the exact summary needed for the board report.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">SUPPORTED FORMATS</div>
+      <h2 class="section-title reveal">Supported Formats</h2>
+      <div class="formats-row reveal" style="transition-delay:.1s">
+        <div class="format-badge">
+          <div class="format-icon">📗</div>
+          <div>
+            <div class="format-text">XLSX</div>
+            <div class="format-desc">Excel 2007+</div>
+          </div>
+        </div>
+        <div class="format-badge">
+          <div class="format-icon">📘</div>
+          <div>
+            <div class="format-text">XLS</div>
+            <div class="format-desc">Excel 97-2003</div>
+          </div>
+        </div>
+        <div class="format-badge">
+          <div class="format-icon">📄</div>
+          <div>
+            <div class="format-text">CSV</div>
+            <div class="format-desc">Comma Separated</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">FAQ</div>
+      <h2 class="section-title reveal">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">What aggregation types are supported?</div>
+          <div class="faq-a">Sum, Count, Average (Mean), Min, and Max. You can apply multiple aggregations to the same numeric column in one run.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Can I group by more than one column?</div>
+          <div class="faq-a">Yes. Select multiple Group By columns for multi-dimensional summaries (e.g., Region + Year + Product).</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Is the output a live pivot table or a static file?</div>
+          <div class="faq-a">The output is a static, formula-free Excel file — not a live pivot. It doesn't need the source data to remain attached.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What if I have a column with text values I want to count?</div>
+          <div class="faq-a">Use Count as the aggregation. It counts the number of rows in each group, regardless of whether the column is numeric or text.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tool-cta">
+    <div class="container">
+      <div class="cta-card reveal">
+        <h2>Build Any Summary Table<br><span class="accent">Without a Single Pivot.</span></h2>
+        <p>Group, aggregate, and summarize any Excel dataset instantly — no pivot tables, no formulas, just results.</p>
+        <div class="cta-buttons">
+          <a href="../index.html#tools" class="btn-hero primary" style="font-size:15px;padding:16px 40px;">🚀 Try This Tool</a>
+          <a href="../index.html#tools" class="btn-hero secondary">All Tools</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <a href="../index.html" class="logo" style="margin-bottom:8px;">
+            <div class="logo-mark" aria-hidden="true">⚡</div>
+            Data<span>corex</span>
+          </a>
+          <p class="footer-copy">Datacorex Tools Suite v5.0.0 — Free Excel automation tools.</p>
+        </div>
+        <nav class="footer-links">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#tools">Tools</a>
+          <a href="../ar/smart-summary.html">العربية</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  const hamburger = document.getElementById('navHamburger');
+  const mobileMenu = document.getElementById('navMobileMenu');
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => {
+      const isOpen = hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+  }
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(el => io.observe(el));
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    if (navEl) navEl.style.background = window.scrollY > 60 ? 'rgba(10,14,26,.97)' : 'rgba(10,14,26,.75)';
+  });
+</script>
+
+</body>
+</html>

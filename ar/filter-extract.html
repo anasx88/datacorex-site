@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تصفية واستخراج | Datacorex</title>
+  <meta name="description" content="حدد قواعد استخراج مخصصة لسحب الصفوف التي تحتاجها من مجموعات بيانات Excel الكبيرة — فوراً، بدقة، وبدون صيغ معقدة.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../tool-styles.css">
+</head>
+<body>
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="wrapper">
+
+  <nav>
+    <div class="nav-logo-col">
+      <a href="index.html" class="logo" aria-label="Datacorex">
+        <div class="logo-mark" aria-hidden="true">⚡</div>
+        Data<span>corex</span>
+      </a>
+    </div>
+    <div class="nav-links-col">
+      <ul class="nav-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="index.html#tools">الأدوات</a></li>
+      </ul>
+    </div>
+    <div class="nav-cta-col">
+      <div class="lang-toggle">
+        <a href="../tools/filter-extract.html" class="lang-btn">EN</a>
+      </div>
+      <a href="index.html#tools" class="nav-cta">جميع الأدوات</a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="تبديل القائمة" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile-menu" id="navMobileMenu">
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="index.html#tools">الأدوات</a></li>
+        <li><a href="../tools/filter-extract.html">English</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="tool-hero">
+    <div class="hero-glows" aria-hidden="true"></div>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">الرئيسية</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="index.html#tools">الأدوات</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>تصفية واستخراج</span>
+      </div>
+      <div class="tool-badge">أداة استخراج البيانات</div>
+      <h1>تصفية واستخراج الصفوف<br><span class="accent">بقواعد دقيقة</span></h1>
+      <p class="tool-hero-sub">حدد قواعد استخراج مخصصة لسحب الصفوف التي تحتاجها من مجموعات بيانات Excel الكبيرة — فوراً، بدقة، وبدون صيغ معقدة.</p>
+      <div class="hero-actions">
+        <a href="index.html#tools" class="btn-hero primary">🚀 جرب هذه الأداة</a>
+        <a href="index.html#tools" class="btn-hero secondary">جميع الأدوات</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="tool-image-section">
+    <div class="container">
+      <div class="tool-image-wrap">
+        <img src="../images/tools/filter-extract.png" alt="واجهة أداة التصفية والاستخراج" loading="lazy" width="900">
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">الأداة</div>
+      <h2 class="section-title reveal">ماذا تفعل هذه الأداة</h2>
+      <p class="section-body reveal" style="transition-delay:.1s">تتيح لك أداة التصفية والاستخراج تحديد قواعد تصفية متعددة لاستخراج مجموعة فرعية مستهدفة من الصفوف من أي مجموعة بيانات Excel أو CSV. ادمج الشروط عبر أعمدة مختلفة — صفّي حسب القسم، الحالة، نطاق التاريخ، الحد الرقمي، أو أي قيمة — واحصل على ملف مستخرج نظيف يحتوي فقط على الصفوف المتطابقة.</p>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">الفوائد</div>
+      <h2 class="section-title reveal">فوائد رئيسية</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">🎛️</div>
+          <div class="benefit-title">تصفية متعدد الشروط</div>
+          <div class="benefit-desc">ادمج شروط AND/OR عبر أعمدة متعددة لاستخراج السجلات الدقيقة التي تحتاجها.</div>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">📤</div>
+          <div class="benefit-title">إخراج مستخرج نظيف</div>
+          <div class="benefit-desc">يحتوي الإخراج فقط على الصفوف المتطابقة — بدون بيانات إضافية، بدون صفوف مخفية، فقط ما طلبته.</div>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">🔁</div>
+          <div class="benefit-title">قواعد تصفية قابلة لإعادة الاستخدام</div>
+          <div class="step-content-desc">احفظ تكوين التصفية وأعد استخدامه على ملفات بيانات جديدة كل شهر.</div>
+        </div>
+        <div class="benefit-card reveal">
+          <div class="benefit-icon">🔢</div>
+          <div class="benefit-title">التعامل مع الملفات الكبيرة</div>
+          <div class="benefit-desc">استخرج من مجموعات بيانات بـ 100,000+ صف بدون مشاكل في الأداء.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">متى تستخدم</div>
+      <h2 class="section-title reveal">متى تستخدم هذه الأداة</h2>
+      <div class="use-cases-list">
+        <div class="use-case-item reveal">
+          <div class="uc-bullet"></div>
+          <div class="uc-text">استخراج جميع الموظفين النشطين في قسم معين من قائمة الموارد البشرية</div>
+        </div>
+        <div class="use-case-item reveal">
+          <div class="uc-bullet"></div>
+          <div class="uc-text">سحب جميع المعاملات فوق مبلغ معين من دفتر الأستاذ المالي</div>
+        </div>
+        <div class="use-case-item reveal">
+          <div class="uc-bullet"></div>
+          <div class="uc-text">تصفية سجلات العملاء حسب المنطقة، الحالة، ونطاق تاريخ الشراء</div>
+        </div>
+        <div class="use-case-item reveal">
+          <div class="uc-bullet"></div>
+          <div class="uc-text">استخراج الفواتير المتأخرة من مجموعة بيانات حسابات القبض</div>
+        </div>
+        <div class="use-case-item reveal">
+          <div class="uc-bullet"></div>
+          <div class="uc-text">سحب جميع المنتجات بمستويات مخزون أقل من الحد الأدنى</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">سير العمل</div>
+      <h2 class="section-title reveal">إدخال → معالجة → إخراج</h2>
+      <div class="flow-grid reveal">
+        <div class="flow-card">
+          <div class="flow-label">الإدخال</div>
+          <div class="flow-title">مجموعة بيانات Excel / CSV</div>
+          <div class="flow-body">ارفع مجموعة البيانات الكاملة بجميع الصفوف. تعمل الأداة على أي ملف Excel أو CSV منظم.</div>
+        </div>
+        <div class="flow-arrow"><div class="arrow-line"></div></div>
+        <div class="flow-card">
+          <div class="flow-label">المعالجة</div>
+          <div class="flow-title">تصفية الصفوف القائم على القواعد</div>
+          <div class="flow-body">حدد شروط التصفية لكل عمود. يقيم Datacorex كل صف مقابل قواعدك ويستخرج المتطابقات.</div>
+        </div>
+        <div class="flow-arrow"><div class="arrow-line"></div></div>
+        <div class="flow-card">
+          <div class="flow-label">الإخراج</div>
+          <div class="flow-title">ملف نتائج مستخرج</div>
+          <div class="flow-body">حمّل ملف Excel نظيف يحتوي فقط على الصفوف التي طابقت جميع شروط التصفية.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">كيفية الاستخدام</div>
+      <h2 class="section-title reveal">كيفية الاستخدام</h2>
+      <div class="steps-list">
+        <div class="step-item reveal">
+          <div class="step-num-circle">1</div>
+          <div>
+            <div class="step-content-title">ارفع مجموعة البيانات</div>
+            <div class="step-content-desc">ارفع ملف Excel أو CSV. تقرأ الأداة جميع الأعمدة والصفوف تلقائياً.</div>
+          </div>
+        </div>
+        <div class="step-item reveal">
+          <div class="step-num-circle">2</div>
+          <div>
+            <div class="step-content-title">حدد قواعد التصفية</div>
+            <div class="step-content-desc">عيّن شروطاً لكل عمود — يساوي، يحتوي على، أكبر من، أقل من، نطاق تاريخ، إلخ.</div>
+          </div>
+        </div>
+        <div class="step-item reveal">
+          <div class="step-num-circle">3</div>
+          <div>
+            <div class="step-content-title">حدد منطق القواعد</div>
+            <div class="step-content-desc">اختر ما إذا كانت جميع القواعد يجب أن تتطابق (AND) أو يمكن لأي قاعدة أن تتطابق (OR).</div>
+          </div>
+        </div>
+        <div class="step-item reveal">
+          <div class="step-num-circle">4</div>
+          <div>
+            <div class="step-content-title">شغل التصفية</div>
+            <div class="step-content-desc">انقر على تشغيل التصفية. يقيم Datacorex كل صف مقابل قواعدك فوراً.</div>
+          </div>
+        </div>
+        <div class="step-item reveal">
+          <div class="step-num-circle">5</div>
+          <div>
+            <div class="step-content-title">حمّل الملف المستخرج</div>
+            <div class="step-content-desc">حمّل النتائج كملف Excel نظيف يحتوي فقط على الصفوف المتطابقة.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">أمثلة</div>
+      <h2 class="section-title reveal">أمثلة حقيقية</h2>
+      <div class="examples-grid">
+        <div class="example-card reveal">
+          <div class="example-tag">المالية</div>
+          <div class="example-title">استخراج الفواتير عالية القيمة</div>
+          <div class="example-body">يحتاج فريق الحسابات لمراجعة جميع الفواتير فوق 10,000$ التي لا تزال غير مدفوعة وأقدم من 30 يوماً. يطبق التصفية والاستخراج ثلاثة قواعد متزامنة ويعيد قائمة مستهدفة من 47 فاتورة من مجموعة بيانات 12,000 سجل.</div>
+        </div>
+        <div class="example-card reveal">
+          <div class="example-tag">الموارد البشرية</div>
+          <div class="example-title">قائمة الموظفين البعيدين النشطين</div>
+          <div class="example-body">يحتاج الموارد البشرية لقائمة بجميع الموظفين النشطين في قسم الهندسة أو تقنية المعلومات والمتواجدين في مواقع بعيدة. ثلاثة قواعد تصفية تعمل متزامنة، تستخرج 234 سجلاً متطابقاً من قائمة 5,000 صف في ثوانٍ.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">الصيغ المدعومة</div>
+      <h2 class="section-title reveal">الصيغ المدعومة</h2>
+      <div class="formats-row reveal" style="transition-delay:.1s">
+        <div class="format-badge">
+          <div class="format-icon">📗</div>
+          <div>
+            <div class="format-text">XLSX</div>
+            <div class="format-desc">Excel 2007+</div>
+          </div>
+        </div>
+        <div class="format-badge">
+          <div class="format-icon">📘</div>
+          <div>
+            <div class="format-text">XLS</div>
+            <div class="format-desc">Excel 97-2003</div>
+          </div>
+        </div>
+        <div class="format-badge">
+          <div class="format-icon">📄</div>
+          <div>
+            <div class="format-text">CSV</div>
+            <div class="format-desc">مفصول بفواصل</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-eyebrow">الأسئلة الشائعة</div>
+      <h2 class="section-title reveal">الأسئلة الشائعة</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">كم عدد قواعد التصفية التي يمكنني تعيينها دفعة واحدة؟</div>
+          <div class="faq-a">يمكنك تحديد أي عدد تحتاجه من القواعد — واحدة لكل عمود أو قواعد متعددة على نفس العمود.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">هل يمكنني التصفية حسب نطاقات التواريخ؟</div>
+          <div class="faq-a">نعم. تدعم أعمدة التاريخ شروط قبل، بعد، بين، والتطابق التام.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">ما أنواع الشروط المدعومة؟</div>
+          <div class="faq-a">يساوي، لا يساوي، يحتوي على، يبدأ بـ، ينتهي بـ، أكبر من، أقل من، بين، فارغ، وغير فارغ.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">هل يمكنني الاستخراج إلى ملف منفصل بدون تعديل الأصلي؟</div>
+          <div class="faq-a">نعم — يقوم التصفية والاستخراج دائماً بإنشاء ملف إخراج جديد. بياناتك الأصلية لا يتم تعديلها أبداً.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tool-cta">
+    <div class="container">
+      <div class="cta-card reveal">
+        <h2>استخرج بالضبط<br><span class="accent">الصفوف التي تحتاجها.</span></h2>
+        <p>ابنِ قواعد تصفية مخصصة واستخرج مجموعات فرعية دقيقة من أي مجموعة بيانات Excel — بدون صيغ.</p>
+        <div class="cta-buttons">
+          <a href="index.html#tools" class="btn-hero primary" style="font-size:15px;padding:16px 40px;">🚀 جرب هذه الأداة</a>
+          <a href="index.html#tools" class="btn-hero secondary">جميع الأدوات</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <a href="index.html" class="logo" style="margin-bottom:8px;">
+            <div class="logo-mark" aria-hidden="true">⚡</div>
+            Data<span>corex</span>
+          </a>
+          <p class="footer-copy">Datacorex Tools Suite v5.0.0 — أدوات أتمتة Excel مجانية.</p>
+        </div>
+        <nav class="footer-links">
+          <a href="index.html">الرئيسية</a>
+          <a href="index.html#tools">الأدوات</a>
+          <a href="../tools/filter-extract.html">English</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  const hamburger = document.getElementById('navHamburger');
+  const mobileMenu = document.getElementById('navMobileMenu');
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => {
+      const isOpen = hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+  }
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(el => io.observe(el));
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    if (navEl) navEl.style.background = window.scrollY > 60 ? 'rgba(10,14,26,.97)' : 'rgba(10,14,26,.75)';
+  });
+</script>
+
+</body>
+</html>
