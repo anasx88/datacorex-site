@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>تقسيم الملف | Datacorex</title>
+<meta content="قسّم مجموعة بيانات Excel الكبيرة إلى ملفات منفصلة حسب أي قيمة عمود — أقسام، مناطق، فئات، أو تواريخ — تلقائياً." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800;900&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&amp;family=DM+Mono:wght@400;500&amp;family=Cairo:wght@400;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="../tool-styles.css" rel="stylesheet"/>
+</head>
+<body>
+<div aria-hidden="true" class="bg-grid"></div>
+<div class="wrapper"><section class="tool-hero compact-hero">
+<div aria-hidden="true" class="hero-glows"></div>
+<div class="container">
+<div class="breadcrumb">
+<a href="index.html">الرئيسية</a>
+<span class="breadcrumb-sep">›</span>
+<a href="index.html#tools">الأدوات</a>
+<span class="breadcrumb-sep">›</span>
+<span>تقسيم الملف</span>
+</div>
+<div class="tool-badge">أداة تقسيم Excel — الصيغ</div>
+<h1>قسّم ملف Excel واحد<br/><span class="accent">إلى ملفات منفصلة متعددة</span></h1>
+<p class="tool-hero-sub">صيغ الملفات المدعومة.</p>
+<div class="hero-actions"><a class="btn-hero primary" href="split-file.html">الصفحة الرئيسية للأداة</a><a class="btn-hero secondary" href="tools.html">كل الأدوات</a></div>
+<div class="section-mini-nav"><a href="split-file-what-it-does.html">ماذا تفعل</a><a href="split-file-benefits.html">الفوائد</a><a href="split-file-use-cases.html">حالات الاستخدام</a><a href="split-file-workflow.html">سير العمل</a><a href="split-file-steps.html">كيفية الاستخدام</a><a href="split-file-examples.html">أمثلة</a><a class="active" href="split-file-formats.html">الصيغ</a><a href="split-file-faq.html">الأسئلة الشائعة</a></div></div>
+</section><section class="content-section">
+<div class="container">
+<div class="section-eyebrow">الصيغ المدعومة</div>
+<h2 class="section-title reveal">الصيغ المدعومة</h2>
+<div class="formats-row reveal" style="transition-delay:.1s">
+<div class="format-badge">
+<div class="format-icon">📗</div>
+<div>
+<div class="format-text">XLSX</div>
+<div class="format-desc">Excel 2007+</div>
+</div>
+</div>
+<div class="format-badge">
+<div class="format-icon">📘</div>
+<div>
+<div class="format-text">XLS</div>
+<div class="format-desc">Excel 97-2003</div>
+</div>
+</div>
+<div class="format-badge">
+<div class="format-icon">📄</div>
+<div>
+<div class="format-text">CSV</div>
+<div class="format-desc">مفصول بفواصل</div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="section-directory section-page-shell"><div class="container"><div class="section-back-row"><a class="btn-hero secondary" href="split-file.html">العودة لواجهة الأداة</a><a class="btn-hero primary" href="split-file-faq.html">القسم التالي: الأسئلة الشائعة</a></div></div></section><section class="tool-cta">
+<div class="container">
+<div class="cta-card reveal">
+<h2>قسّم الملفات الكبيرة<br/><span class="accent">بنقرة واحدة</span></h2>
+<p>قسّم أي مجموعة بيانات Excel تلقائياً إلى ملفات منفصلة حسب أي عمود — معبأ وجاهز للتوزيع.</p>
+<div class="cta-buttons">
+<a class="btn-hero primary" href="index.html#tools" style="font-size:15px;padding:16px 40px;">🚀 استعرض كل الأدوات</a>
+<a class="btn-hero secondary" href="index.html">الرئيسية</a>
+</div>
+</div>
+</div>
+</section><footer>
+<div class="container">
+<div class="footer-inner">
+<div>
+<a class="logo" href="index.html" style="margin-bottom:8px;">
+<div aria-hidden="true" class="logo-mark">⚡</div>
+            Data<span>corex</span>
+</a>
+<p class="footer-copy">Datacorex Tools Suite v5.0.0 — أدوات أتمتة Excel.</p>
+</div>
+<nav class="footer-links">
+<a href="index.html">الرئيسية</a>
+<a href="index.html#tools">الأدوات</a>
+<a href="../tools/split-file.html">English</a>
+</nav>
+</div>
+</div>
+</footer></div>
+<script>
+  const hamburger = document.getElementById('navHamburger');
+  const mobileMenu = document.getElementById('navMobileMenu');
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => {
+      const isOpen = hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+  }
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(el => io.observe(el));
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    if (navEl) navEl.style.background = window.scrollY > 60 ? 'rgba(10,14,26,.97)' : 'rgba(10,14,26,.75)';
+  });
+</script>
+</body>
+</html>
