@@ -991,7 +991,7 @@ footer {
   align-items: center; 
   justify-content: space-between; 
   gap: 24px; 
-  flex-wrap: ltr; 
+  flex-wrap: wrap; 
 }
 
 .footer-copy { 
@@ -1096,7 +1096,18 @@ footer {
   padding-left: 0;
   padding-right: 8px;
 }
+[dir="rtl"] .footer-inner {
+  direction: ltr;
+}
 
+[dir="rtl"] .footer-inner > div:first-child {
+  text-align: left;
+  margin-right: auto;
+}
+
+[dir="rtl"] .footer-links {
+  direction: rtl;
+}
 /* ═══════════════════ HOMEPAGE SPECIFIC ═══════════════════ */
 .home-hero {
   padding: 160px 0 100px;
